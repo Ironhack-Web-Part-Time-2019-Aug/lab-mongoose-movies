@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const seeds = require('./seeds');
+
 const http = require('http');
 
 let app = require('../app');
