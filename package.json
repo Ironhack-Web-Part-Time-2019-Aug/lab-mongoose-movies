@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "nodemon ./starter-code/bin/www",
     "dev": "DEBUG=starter-code:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www",
+    "dev-windows": "nodemon ./starter-code/bin/www",
     "lint": "./node_modules/.bin/eslint starter-code/**/*.js"
   },
   "dependencies": {
