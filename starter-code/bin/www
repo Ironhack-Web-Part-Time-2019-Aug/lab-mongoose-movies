@@ -8,6 +8,8 @@ let app = require('../app');
 
 const Celebrity = require('../models/Celebrity');
 
+const {celebrities} = require('../routes/celebrities');
+
 // catch 404 and render a not-found.hbs template
 app.use((req, res, next) => {
   res.status(404);
@@ -45,12 +47,12 @@ server.on('error', error => {
   }
 });
 
-Celebrity.create(seeds)
-  .then((result) => {
-    console.log(`${result}`);
-  }).catch((err) => {
-    console.log('An error happened:', err)
-  });
+// Celebrity.create(seeds)
+//   .then((result) => {
+//     console.log(`${result}`);
+//   }).catch((err) => {
+//     console.log('An error happened:', err)
+//   });
 
 
 
