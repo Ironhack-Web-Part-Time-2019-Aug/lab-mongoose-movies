@@ -3,27 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "dev": "DEBUG=starter-code:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www",
+    "start": "nodemon ./starter-code/bin/www",
+    "dev": "DEBUG=starter-code:* nodemon ./starter-code/bin/www",
+    "dev-windows": "nodemon ./starter-code/bin/www",
     "lint": "./node_modules/.bin/eslint starter-code/**/*.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "cookie-parser": "^1.4.3",
+    "cjs": "^0.0.11",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "hbs": "^4.0.1",
-    "mongoose": "^5.2.10",
-    "morgan": "^1.9.0",
-    "node-sass-middleware": "^0.11.0",
-    "serve-favicon": "^2.5.0"
+    "mongoose": "^5.2.10"
   },
   "devDependencies": {
-    "husky": "^3.0.9",
-    "nodemon": "^1.12.1",
     "eslint": "^6.6.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "husky": "^3.0.9",
+    "nodemon": "^1.12.1"
   },
   "husky": {
     "hooks": {

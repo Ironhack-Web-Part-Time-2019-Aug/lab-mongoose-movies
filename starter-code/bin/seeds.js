@@ -1,4 +1,4 @@
-module.exports = [
+const celebrities =  [
   {
     name: 'Quentin Tarantino',
     occupation: 'Director',
@@ -17,3 +17,5 @@ module.exports = [
     catchPharse: 'Some Phrarse'
   }
 ];
+
+module.exports = celebrities;

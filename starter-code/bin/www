@@ -6,6 +6,8 @@ const http = require('http');
 
 let app = require('../app');
 
+const Celebrity = require('../models/Celebrity');
+
 // catch 404 and render a not-found.hbs template
 app.use((req, res, next) => {
   res.status(404);
@@ -42,6 +44,15 @@ server.on('error', error => {
       throw error;
   }
 });
+
+Celebrity.create(seeds)
+  .then((result) => {
+    console.log(`${result}`);
+  }).catch((err) => {
+    console.log('An error happened:', err)
+  });
+
+
 
 server.listen(process.env.PORT, () => {
   console.log(`Listening on http://localhost:${process.env.PORT}`);
